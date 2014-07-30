@@ -1,0 +1,25 @@
+{
+  "name": "WSJ WallJump",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Get around the paywall for many WSJ articles",
+  "homepage_url": "http://www.wsjwalljump.weebly.com",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "src/bg/background.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "https://*.wsj.com/*",
+    "http://*.wsj.com/*"
+  ]
+}
